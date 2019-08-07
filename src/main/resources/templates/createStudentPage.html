@@ -1,0 +1,155 @@
+<!doctype html>
+<form lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Welcome To eRegister</title>
+</head>
+
+
+
+<form>
+<div class="container-fluid">
+    <div class="row" style="text-align: center">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand">Add New Student</a>
+            </nav>
+        </div>
+    </div>
+</div>
+</form>
+        <div class="col-md-9 col-md-offset-4">
+        <form action="savestudent" method="post">
+            <div class="form-group row">
+                <label for="inputID3" class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-10">
+                    <input type="number" name="studentId" class="form-control" id="inputid3" placeholder="your id">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputSNumber3" class="col-sm-2 col-form-label">Std Number</label>
+                <div class="col-sm-10">
+                    <input type="text" name="studentNumber" class="form-control" id="inputsnumber3" placeholder="Enter student number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputFname3" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="FirstName" class="form-control" id="inputfname3" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputMname3" class="col-sm-2 col-form-label">Middle Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="MiddleName" class="form-control" id="inputmname3" placeholder="Enter mid name">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputLname3" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="LastName" class="form-control" id="inputlname3" placeholder="Enter mid name">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputCgpa3" class="col-sm-2 col-form-label">CGPA</label>
+                <div class="col-sm-10">
+                    <input type="number" step=".01" name="cgpa" class="form-control" id="inputcgpa3" placeholder="Your Cgpa">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEdate3" class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-10">
+                    <input type="date" name="enrollmentDate" class="form-control" id="inputedate3" placeholder="Enrollment Date">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                    <label for="inputFname3" class="col-sm-2 col-form-label">isInternational</label>
+                <div class="col-sm-10">
+                <select name="isInternational" class="col-sm-2 col-form-label form-control">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </div>
+            </div>
+
+    <!-- correct -->
+    <div class="col-md-9 text-center">
+
+
+        <button id="savebutton" name="saveebutton" class="btn btn-primary">Save</button>
+
+        <div id="browse_app">
+            <a class="btn btn-large btn-info" href="/displayStudents1">View Students</a>
+        </div>
+
+    </div>
+        </form>
+          <!--  <p th:if="${message}" th:text="${message}"></p>  -->
+
+    </div>
+</div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <span class="text-muted">Yubraj Ghimire : : : CS425-SWE</span>
+        <span style="float:right;" class="text-muted">&copy; August 2019</span>
+    </div>
+</footer>
+
+
+</body>
+</form>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

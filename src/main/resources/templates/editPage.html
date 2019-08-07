@@ -1,0 +1,117 @@
+<!doctype html>
+<form lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Welcome To eRegister</title>
+</head>
+
+
+
+<form>
+<div class="container-fluid">
+    <div class="row" style="text-align: center">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand">Add New Student</a>
+            </nav>
+        </div>
+    </div>
+</div>
+</form>
+        <div class="col-md-9 col-md-offset-4">
+        <form action="/saveupdatestudent" method="post" th:object="${student}">
+            <div class="form-group row">
+                <label for="inputID3" class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-10">
+                    <input type="number" name="studentId" class="form-control" th:value="${student.studentId}" id="inputid3" placeholder="your id">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputSNumber3" class="col-sm-2 col-form-label">Std Number</label>
+                <div class="col-sm-10">
+                    <input type="text" name="studentNumber" class="form-control" th:value="${student.studentNumber}" id="inputsnumber3" placeholder="Enter student number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputFname3" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="FirstName" class="form-control" th:value="${student.FirstName}" id="inputfname3" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputMname3" class="col-sm-2 col-form-label">Middle Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="MiddleName" class="form-control" th:value="${student.MiddleName}" id="inputmname3" placeholder="Enter mid name">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputLname3" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="LastName" class="form-control" th:value="${student.LastName}" id="inputlname3" placeholder="Enter mid name">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="inputCgpa3" class="col-sm-2 col-form-label">CGPA</label>
+                <div class="col-sm-10">
+                    <input type="number" step=".01" name="cgpa" class="form-control" th:value="${student.cgpa}" id="inputcgpa3" placeholder="Your Cgpa">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEdate3" class="col-sm-2 col-form-label">Date</label>
+                <div class="col-sm-10">
+                    <input type="date" name="enrollmentDate" class="form-control" th:value="${student.enrollmentDate}" id="inputedate3" placeholder="Enrollment Date">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                    <label for="inputFname3" class="col-sm-2 col-form-label">isInternational</label>
+                <div class="col-sm-10">
+                <select name="isInternational" class="col-sm-2 col-form-label form-control">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </div>
+            </div>
+
+    <!-- correct -->
+    <div class="col-md-9 text-center">
+
+
+        <button id="savebutton" name="saveebutton" class="btn btn-primary">Save</button>
+
+        <div id="browse_app">
+            <a class="btn btn-large btn-info" href="/displayStudents1">View Students</a>
+        </div>
+
+    </div>
+        </form>
+          <!--  <p th:if="${message}" th:text="${message}"></p>  -->
+
+    </div>
+</div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <span class="text-muted">Yubraj Ghimire : : : CS425-SWE</span>
+        <span style="float:right;" class="text-muted">&copy; August 2019</span>
+    </div>
+</footer>
+
+
+</body>
+</form>
+</html>
